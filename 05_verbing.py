@@ -14,7 +14,7 @@ def verbing(s):
     # +++ SUA SOLUÇÃO +++
     verb = s
     if (len(s)> 2):
-        verb = s + 'ly' if (s[-3:] == 'ing') else s + 'ing'
+        verb = f'{s}ly' if s.endswith('ing') else f'{s}ing'
 
     return verb
 
