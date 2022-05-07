@@ -12,7 +12,15 @@ a-frente + b-frente + a-trás + b-trás
 """
 def front_back(a, b):
     # +++ SUA SOLUÇÃO +++
-    return
+    meioA = len(a)//2 + len(a)%2
+    aFrente = a[:meioA]
+    aTras = a[meioA:]
+    
+    meioB = len(b)//2 + len(b)%2
+    bFrente = b[:meioB]
+    bTras = b[meioB:]
+
+    return f'{aFrente}{bFrente}{aTras}{bTras}'
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
