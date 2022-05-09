@@ -13,11 +13,9 @@ antes de combina-las.
 
 def front_x(words):
     # +++ SUA SOLUÇÃO +++
+    words.sort()
     listX = [w for w in words if w[0] == 'x']
     listOthers =  [w for w in words if w[0] != 'x']
-
-    listX.sort()
-    listOthers.sort()
 
     return listX + listOthers
 
