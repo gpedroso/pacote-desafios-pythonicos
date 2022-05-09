@@ -10,6 +10,12 @@ PS: Python não possui o operador ++, porém += funciona.
 
 def match_ends(words):
     # +++ SUA SOLUÇÃO +++
+    filteredList = [1 for w in words if len(w) >= 2 and w[0] == w[-1]]
+
+    return len(filteredList)
+
+def match_ends_first(words):
+    # +++ SUA SOLUÇÃO +++
     count = 0
     
     for w in words:
